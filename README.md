@@ -20,7 +20,7 @@ npm start
 
 Para testar os serviços basta dar o start do servidor `npm start` e importar o arquivo [auth.postman_collection.json](auth.postman_collection.json) no Postman.
 
-## Documentação
+## [Documentação](https://documenter.getpostman.com/view/3115327/RWEjqJBJ)
 
-A documentação completa destes serviços pode ser encontrada na [wiki](https://github.com/Didone/comp-ms/wiki) do treinamento.
-Acesse: [github.com/Didone/comp-ms/wiki/auth](https://github.com/Didone/comp-ms/wiki/auth)
+A documentação oficial dos serviços encontra-se em [documenter.getpostman.com](https://documenter.getpostman.com/view/3115327/RWEjqJBJ).
+Para outras informações acesse [wiki](https://github.com/Didone/comp-ms/wiki/auth) do treinamento.
