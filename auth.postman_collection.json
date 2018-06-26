@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "9d72ac56-d68c-4389-8e3e-994dc39f3534",
+		"name": "auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "autenticação",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "C0nnect",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "didone",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "login",
+							"value": "dsadsad",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "se",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{SERVER}}/api/auth",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"auth"
+					]
+				},
+				"description": "Realiza a autenticação do usuário por login e senha.\nO retorno é o status de loged (true ou false) e o token jwt que será usado para validar a autenticação nas demais requests"
+			},
+			"response": []
+		},
+		{
+			"name": "versão",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{SERVER}}/api/versao",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"versao"
+					]
+				},
+				"description": "Verifica a versão da API"
+			},
+			"response": []
+		},
+		{
+			"name": "verificação",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoxLCJsb2dpbiI6ImRpZG9uZSIsImlhdCI6MTUzMDA0Mjc3NSwiZXhwIjoxNTMwMDQ2Mzc1fQ.k1JaOi15wUbNDrg2IfmEc7RjQ8jbCYJ9sgzSvZ0Zj5U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{SERVER}}/api/verify",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"verify"
+					]
+				},
+				"description": "Verifica a autenticidade do token enviado. O retorno é a variável \"loged\" com true para token válido e false para token inválido."
+			},
+			"response": []
+		}
+	]
+}

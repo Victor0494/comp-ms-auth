@@ -15,3 +15,7 @@ Fazer o clone e rodar os comandos abaixo
 npm install
 npm start
 ```
+
+## Testes
+
+Para testar os serviços basta dar o start do servidor `npm start` e importar o arquivo [auth.postman_collection.json](auth.postman_collection.json) no Postman
