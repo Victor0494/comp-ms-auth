@@ -23,7 +23,7 @@ app.get('/',function(req,res) {
     res.send(pkg.name)
 })
 // Rota da versão da API
-app.get('/api/versao',function (req, res) {
+app.get('/api/version',function (req, res) {
     res.status(200).send("Versão: "+pkg.version)
 })
 // Rota de autenticação e geração do token
