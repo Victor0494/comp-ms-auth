@@ -6,10 +6,6 @@ app.get('/',function(req,res) {
     res.send('Hello World!')
 })
 
-app.get('/outracoisa',function(req,res) {
-    res.send('Outra Coisa')
-})
-
 app.listen(port,function () {
     console.log("Rodando na porta:",port)
 })
